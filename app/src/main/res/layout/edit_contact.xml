@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:id="@+id/tableRow1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/edit_contact_title"
+            android:id="@+id/editContactTextView"
+            android:padding="@dimen/padding_5dp"
+            android:textColor="#FFF"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name"
+            android:id="@+id/firstNameTextView"
+            android:padding="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstName"
+            android:padding="@dimen/padding_5dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+            <requestFocus/>
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:id="@+id/lastNameTextView"
+            android:padding="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastName"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp"
+            android:inputType="textPersonName"
+            android:ems="10">
+            <requestFocus/>
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:id="@+id/phoneNumberTextView"
+            android:padding="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNumber"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_gravity="top">
+            <requestFocus/>
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_address"
+            android:id="@+id/emailAddressTextView"
+            android:padding="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailAddress"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp"
+            android:inputType="textPersonName"
+            android:ems="10">
+            <requestFocus/>
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_address"
+            android:id="@+id/homeAddressTextView"
+            android:padding="@dimen/padding_5dp"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeAddress"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_5dp"
+            android:inputType="text|textPostalAddress"
+            android:ems="10">
+            <requestFocus/>
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow7">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_button"
+            android:id="@+id/editButton"
+            android:padding="@dimen/padding_5dp"
+            android:onClick="editContact"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_button"
+            android:id="@+id/deleteButton"
+            android:onClick="removeContact"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+</TableLayout>
